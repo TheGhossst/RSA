@@ -47,7 +47,9 @@ def rsa():
         return (plaintext ** e) % n
     
     d = mod_inverse(e, phi_n)
-    print(d)
+    #print(d)
+    
+    private_key = (d, n)
 
 
 

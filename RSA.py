@@ -1,3 +1,7 @@
+def rsa():
+    p = int(input("Enter a large prime number (p): "))
+
+
 def main():
     public_key, private_key, encrypt, decrypt = rsa()
 

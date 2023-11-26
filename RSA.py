@@ -11,6 +11,14 @@ def is_prime(num):
             return False
     return True
 
+def mod_inverse(a, m):
+    m0, x0, x1 = m, 0, 1
+    while a > 1:
+        q = a // m
+        m, a = a % m, m
+        x0, x1 = x1 - q * x0, x0
+    return x1 + m0 if x1 < 0 else x1
+
 def rsa():
     p = int(input("Enter a large prime number (p): "))
     while not is_prime(p):
@@ -39,6 +47,7 @@ def rsa():
         return (plaintext ** e) % n
     
     d = mod_inverse(e, phi_n)
+    print(d)
 
 
 

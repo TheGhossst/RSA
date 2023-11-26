@@ -1,5 +1,7 @@
 def rsa():
     p = int(input("Enter a large prime number (p): "))
+    while not is_prime(p):
+        p = int(input("Invalid input. Please enter a prime number for p: "))
 
 
 def main():

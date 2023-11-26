@@ -34,6 +34,9 @@ def rsa():
         e = int(input("Invalid input. Please choose a valid value for e: "))
         
     public_key = (e, n)
+    
+    def encrypt(plaintext):
+        return (plaintext ** e) % n
 
 
 

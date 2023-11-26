@@ -37,6 +37,9 @@ def rsa():
     
     def encrypt(plaintext):
         return (plaintext ** e) % n
+    
+    d = mod_inverse(e, phi_n)
+
 
 
 

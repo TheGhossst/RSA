@@ -54,6 +54,7 @@ def rsa():
     def decrypt(ciphertext):
         return (ciphertext ** d) % n
 
+    return public_key, private_key, encrypt, decrypt
 
 
 

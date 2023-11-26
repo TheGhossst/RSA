@@ -32,6 +32,8 @@ def rsa():
     e = int(input("Choose one of the values for e from the list above: "))
     while e not in possible_e_values:
         e = int(input("Invalid input. Please choose a valid value for e: "))
+        
+    public_key = (e, n)
 
 
 

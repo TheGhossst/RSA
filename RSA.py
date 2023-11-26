@@ -72,3 +72,16 @@ def main():
        
 if __name__ == "__main__":
     main()
+"""
+Sample Output
+Enter a large prime number (p): 7
+Enter another large prime number (q): 11
+Possible values of e (1 < e < 60) that are relatively prime to 60:
+[7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 49, 53, 59]
+Choose one of the values for e from the list above: 7
+Enter a message to encrypt (as an integer): 9
+Public key is:  (7, 77)
+Encrypted message: 37
+Private key is:  (43, 77)
+Decrypted message: 9
+"""

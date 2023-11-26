@@ -50,6 +50,9 @@ def rsa():
     #print(d)
     
     private_key = (d, n)
+    
+    def decrypt(ciphertext):
+        return (ciphertext ** d) % n
 
 
 

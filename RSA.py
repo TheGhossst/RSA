@@ -25,6 +25,9 @@ def rsa():
     phi_n = (p - 1) * (q - 1)
     
     possible_e_values = [e for e in range(2, phi_n) if gcd(e, phi_n) == 1]
+    
+    print(f"Possible values of e (1 < e < {phi_n}) that are relatively prime to {phi_n}:")
+    print(possible_e_values)
 
 
 def main():

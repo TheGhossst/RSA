@@ -14,6 +14,10 @@ def rsa():
     q = int(input("Enter another large prime number (q): "))
     while not is_prime(q):
         q = int(input("Invalid input. Please enter a prime number for q: "))
+        
+    n = p * q
+
+    phi_n = (p - 1) * (q - 1)
 
 
 def main():

@@ -10,3 +10,7 @@ def main():
     decrypted_message = decrypt(encrypted_message)
     print("Private key is: ",private_key)
     print("Decrypted message:", decrypted_message)
+    
+       
+if __name__ == "__main__":
+    main()

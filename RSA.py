@@ -56,8 +56,6 @@ def rsa():
 
     return public_key, private_key, encrypt, decrypt
 
-
-
 def main():
     public_key, private_key, encrypt, decrypt = rsa()
 
